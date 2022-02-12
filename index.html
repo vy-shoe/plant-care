@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Choose your Desk Plant 🌿</title>
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <img className="headerBanner" src="assets/banner.jpg" height="150" width="100%">
+    <audio autoplay="false" volume="0.2">
+        <!-- <source src="assets/plant-lofi.mp3" type="audio/ogg">
+        <source src="assets/plant-lofi.mp3" type="audio/mpeg"> -->
+    Your browser does not support the audio element.
+    </audio>
+    <h1 class="title">Choose your Desk Plant 🌿</h1>
+    <div class="characters" >
+        <button class="character" class="bambooButton" onclick="selectCharacter(this.value)" value="bamboo">  
+            <img src="assets/bamboo.png">
+            <form action="main.html"></form>
+            <h3>bamboo</h3>
+        </button>
+
+        <button class="character" class="flowerButton" onclick="selectCharacter(this.value)" value="flower">  
+            <img src="assets/flower.png">
+            <h3>flower</h3>
+        </button>
+
+        <button class="character" class="succulentButton" onclick="selectCharacter(this.value)" value="succulent">  
+            <img src="assets/succulent.png">
+            <h3>succulent</h3>
+        </button>
+
+    </div>
+    
+</body>
+</html>
