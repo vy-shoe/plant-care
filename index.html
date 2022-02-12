@@ -4,31 +4,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style src="style.css"></style>
     <title>Choose your Desk Plant 🌿</title>
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="/style.css">
 </head>
 <body>
-    <audio controls autoplay="false" volume="0.2" controls="false">
-        <source src="assets/plant-lofi.mp3" type="audio/ogg">
-        <source src="assets/plant-lofi.mp3" type="audio/mpeg">
-      Your browser does not support the audio element.
-      </audio>
-    <h1>Choose your Desk Plant 🌿</h1>
-    <div className="characters">
-        <div clasName="character">
-            <button className="bambooButton">Bamboo</button>
-        </div>
+    <img className="headerBanner" src="assets/banner.jpg" height="150" width="100%">
+    <audio autoplay="false" volume="0.2">
+        <!-- <source src="assets/plant-lofi.mp3" type="audio/ogg">
+        <source src="assets/plant-lofi.mp3" type="audio/mpeg"> -->
+    Your browser does not support the audio element.
+    </audio>
+    <h1 class="title">Choose your Desk Plant 🌿</h1>
+    <div class="characters">
+        <button class="character" class="bambooButton" type="button" onclick="selectCharacter(this.value)" value="bamboo">  
+            <img src="assets/bamboo.png">
+            <h3>bamboo</h3>
+        </button>
 
-        <div clasName="character">
-            <button className="flowerButton" id="flower">Flower</button>
-        </div>
+        <button class="character" class="flowerButton" type="button" onclick="selectCharacter(this.value)" value="flower">  
+            <img src="assets/flower.png">
+            <h3>flower</h3>
+        </button>
 
-        <div clasName="character">
-            <button className="succulentButton" id="succulent">Succulent</button>
-        </div>
+        <button class="character" class="succulentButton" type="button" onclick="selectCharacter(this.value)" value="succulent">  
+            <img src="assets/succulent.png">
+            <h3>succulent</h3>
+        </button>
 
     </div>
-
     
 </body>
 </html>
