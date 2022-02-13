@@ -9,15 +9,22 @@
     <link rel="stylesheet" href="/main/main.css">
 </head>
 <body>
-    <h1>Plant</h1>
-    <!-- <h3 id="userPlant"></h3> -->
+    <audio controls autoplay="true" volume="0.3">
+        <source src="/assets/plant-lofi.mp3" type="audio/ogg">
+        <source src="/assets/plant-lofi.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    <div clas="container">
+        <h3>Take Care of Your Plant</h3>
+        <!-- <h3 id="userPlant"></h3> -->
 
-    <div>
-        <img class="image" src="/assets/succulent-happy.png">
-        <p class="text">Your plant is doing a great job– just like you :)</p>
-        <button class="waterButton" id="waterButton" onclick="waterPlant()">Water Me!</button>
+        <div>
+            <img class="image" id="image" src="/assets/plants/bamboo3.png" height="300" height="300" object-fit="cover">
+            <p class="text" id="text">Water me please ':/ </p>
+            <button class="button" id="button" onclick="waterPlant()">Water Me!</button>
+        </div>
+
     </div>
-
     
 </body>
 </html>

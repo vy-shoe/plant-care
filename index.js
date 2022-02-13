@@ -1,4 +1,4 @@
-var characterChosen;
+var characterChosen = "bamboo";
 
 function selectCharacter(value) {  
     characterChosen = value;
