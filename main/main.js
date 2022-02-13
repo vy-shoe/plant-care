@@ -9,7 +9,7 @@ function waterPlant() {
     } else {
         alert("Thanks for hydrating me! Yum... 🤤🌱!");
     }
-    document.getElementById("image").src = "/assets/plants/succulent1.png"
+    document.getElementById("image").src = "/assets/plants/bamboo1.png"
     watered = true;
     startTimer();
     document.getElementById("text").innerHTML = "Your plant is doing a great job– just like you :)";
@@ -23,12 +23,12 @@ function startTimer() {
 }
 
 function midPlant() {
-    document.getElementById("image").src = "/assets/plants/succulent2.png"
+    document.getElementById("image").src = "/assets/plants/bamboo2.png"
     document.getElementById("text").innerHTML = "Your plant is staying hydrated, you should take a break and drink water"
 }
 
 function dryPlant() {
-    document.getElementById("image").src = "/assets/plants/succulent3.png"
+    document.getElementById("image").src = "/assets/plants/bamboo3.png"
     document.getElementById("text").innerHTML = "Your plant needs some attention!"
     watered = false;
 }
